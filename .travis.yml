@@ -1,0 +1,11 @@
+language: minimal
+dist: focal
+
+services:
+- docker
+
+os:
+- linux
+
+script:
+- ./travis/test.sh
