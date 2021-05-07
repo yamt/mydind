@@ -8,4 +8,4 @@ os:
 - linux
 
 script:
-- ./test/test.sh
+- ./test/run.sh
