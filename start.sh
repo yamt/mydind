@@ -1,3 +1,3 @@
 #! /bin/sh
 
-dockerd
+tmux new dockerd
