@@ -13,4 +13,5 @@ RUN curl -o docker.tgz \
     https://download.docker.com/linux/static/stable/x86_64/docker-20.10.6.tgz
 RUN pax -rvzf docker.tgz -s ',^docker/,/usr/local/bin/,'
 
-
+COPY start.sh /usr/local/bin
+CMD [ "start.sh" ]
