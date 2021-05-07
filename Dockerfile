@@ -7,7 +7,9 @@ RUN apt-get update && apt-get install -y \
     m4 \
     zsh \
     pax \
-    tmux
+    tmux \
+    vim \
+    less
 
 RUN chsh -s /usr/bin/zsh root
 
