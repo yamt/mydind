@@ -1,3 +1,4 @@
 #! /bin/sh
 
-docker build -t test .
+docker build -t yamt/mydind .
+docker run yamt/mydind docker version
