@@ -8,4 +8,4 @@ os:
 - linux
 
 script:
-- ./travis/test.sh
+- ./test/test.sh
