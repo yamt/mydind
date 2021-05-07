@@ -29,4 +29,4 @@ ENV DOCKER_CLI_EXPERIMENTAL=enabled
 COPY tmux.conf /root/.tmux.conf
 
 COPY start.sh /usr/local/bin
-CMD [ "start.sh" ]
+ENTRYPOINT [ "start.sh" ]
