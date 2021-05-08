@@ -20,8 +20,8 @@ RUN curl https://download.docker.com/linux/static/stable/x86_64/docker-20.10.6.t
 RUN mkdir -p /root/.docker/cli-plugins
 RUN curl -o /root/.docker/cli-plugins/docker-buildx \
     -L \
-    https://github.com/docker/buildx/releases/download/v0.5.1/buildx-v0.5.1.linux-amd64
-RUN chmod a+x ~/.docker/cli-plugins/docker-buildx
+    https://github.com/docker/buildx/releases/download/v0.5.1/buildx-v0.5.1.linux-amd64 && \
+    chmod a+x ~/.docker/cli-plugins/docker-buildx
 ENV DOCKER_CLI_EXPERIMENTAL=enabled
 
 # for overlay2
