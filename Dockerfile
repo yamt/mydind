@@ -27,7 +27,7 @@ ENV DOCKER_CLI_EXPERIMENTAL=enabled
 # for overlay2
 VOLUME /var/lib/docker
 
-COPY tmux.conf /root/.tmux.conf
+COPY dot-files/tmux.conf /root/.tmux.conf
 
 COPY start.sh /usr/local/bin
 ENTRYPOINT [ "start.sh" ]
