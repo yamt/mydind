@@ -28,6 +28,7 @@ ENV DOCKER_CLI_EXPERIMENTAL=enabled
 VOLUME /var/lib/docker
 
 COPY dot-files/tmux.conf /root/.tmux.conf
+COPY dot-files/zshrc /root/.zshrc
 
 COPY start.sh /usr/local/bin
 ENTRYPOINT [ "start.sh" ]
