@@ -26,6 +26,9 @@ RUN mv docker-buildx /root/.docker/cli-plugins
 RUN chmod a+x ~/.docker/cli-plugins/docker-buildx
 ENV DOCKER_CLI_EXPERIMENTAL=enabled
 
+# for overlay2
+VOLUME /var/lib/docker
+
 COPY tmux.conf /root/.tmux.conf
 
 COPY start.sh /usr/local/bin
