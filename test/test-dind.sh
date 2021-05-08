@@ -19,5 +19,7 @@ done
 
 for P in $PLATFORMS; do
     NAME=test-$(echo $P | tr / -)
-    docker run ${NAME}
+    docker run \
+        --platform $P \
+        ${NAME}
 done
