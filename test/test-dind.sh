@@ -2,6 +2,7 @@
 
 docker version
 docker buildx version
+docker system info
 
 PLATFORMS="linux/amd64 linux/arm64"
 
