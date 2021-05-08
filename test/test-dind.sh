@@ -1,5 +1,8 @@
 #! /bin/sh
 
+set -e
+set -x
+
 docker version
 docker buildx version
 docker system info
