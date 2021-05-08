@@ -9,7 +9,8 @@ RUN apt-get update && apt-get install -y \
     pax \
     tmux \
     vim \
-    less
+    less \
+    && rm -rf /var/lib/apt/list/*
 
 RUN chsh -s /usr/bin/zsh root
 
