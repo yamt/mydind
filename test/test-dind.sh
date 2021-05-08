@@ -9,13 +9,15 @@ cd alpine
 PLATFORMS="linux/amd64 linux/arm64"
 
 for P in $PLATFORMS; do
+    NAME=test-$(echo $P | tr / -)
     docker buildx build \
         --platform $P \
-        -t test-$P \
+        -t ${NAME} \
         --load \
         .
 done
 
 for P in $PLATFORMS; do
-    docker run test-$P
+    NAME=test-$(echo $P | tr / -)
+    docker run ${NAME}
 done
