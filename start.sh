@@ -17,8 +17,7 @@ fi
 test -f /proc/sys/fs/binfmt_misc/qemu-aarch64
 umount /proc/sys/fs/binfmt_misc
 
-if [ $# -eq 0 ]; then
-    tmux a -t docker
-else
+if [ $# -ne 0 ]; then
     exec $@
 fi
+exec tmux a -t docker
