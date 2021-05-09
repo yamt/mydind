@@ -6,7 +6,7 @@ A dind image for my convenience
 
 <pre>
     % docker build . -t yamt/mydind
-    % docker run --privileged -it yamt/mydind
+    % docker run --rm --privileged -it yamt/mydind
 </pre>
 
 ## Tested with
