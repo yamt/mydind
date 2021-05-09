@@ -4,7 +4,7 @@ set -e
 
 tmux new -d -s docker dockerd
 
-# wait for the docker api getting ready
+echo "Waiting for the docker api getting ready..."
 while ! docker version > /dev/null 2>&1; do sleep 1; done
 
 # enable multiarch if it isn't already.
