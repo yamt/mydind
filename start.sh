@@ -18,6 +18,7 @@ if [ ! -f /proc/sys/fs/binfmt_misc/qemu-aarch64 ]; then
     docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
 fi
 test -f /proc/sys/fs/binfmt_misc/qemu-aarch64
+cat /proc/sys/fs/binfmt_misc/qemu-aarch64
 umount /proc/sys/fs/binfmt_misc
 
 if [ $# -ne 0 ]; then
